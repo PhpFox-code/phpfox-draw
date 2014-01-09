@@ -1,0 +1,283 @@
+root { 
+    display: block;
+    background: #ccc;
+}
+.opacity-class{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+#drawpop{
+    position: fixed;
+    width: 34px;
+    height: 144px;
+    right: 0;
+    top: 230px;
+    cursor: pointer;
+}
+.colorpicker {z-index: 9002}
+#draw_slider_holder{
+    position: fixed;
+
+    border: 1px solid #CFCFCF;
+    background:#FFF;
+    width:500px;
+    height: 450px;
+    right:0;
+    top: 0;
+    display: none;
+    overflow: auto;
+    z-index: 9001;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.draw_close{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0px;
+    right: 0px;
+}
+.pop_body{
+    margin:10px 10px 10px 10px;
+}
+#draw_slider_holder .table{
+    display: table;
+    width:95%;
+}
+#draw_slider_holder .tool_bar{
+    position: absolute;
+    width: 750px;
+    height: 45px;
+    z-index: 2002;
+}
+#draw_slider_holder .color_picker{
+    height: 45px;
+    position: absolute;
+    width: 60px;
+}
+#draw_slider_holder .color_picker:hover{
+    background: #007BBF;
+    cursor: pointer;
+}
+#draw_slider_holder .size{
+    background-position: right center;
+    height: 45px;
+    left: 59px;
+    position: absolute;
+    width: 131px;
+}
+#draw_slider_holder .break1{
+    position: absolute;
+    height: 45px;
+    width: 2px;
+    left: 497px;
+}
+#draw_slider_holder .break2{
+    position: absolute;
+    height: 45px;
+    width: 2px;
+    left: 247px;
+}
+#draw_slider_holder .size:hover,
+#draw_slider_holder .clear_paint:hover,
+#draw_slider_holder .tool_save:hover{
+    background: #007BBF;
+    cursor: pointer;
+}
+#draw_slider_holder .tool,#draw_slider_holder .clear_paint{
+    background-position: right center;
+    height: 45px;
+    left: 189px;
+    position: absolute;
+    text-align: justify;
+    width: 52px;
+}
+#draw_slider_holder .clear_paint{
+    left:241px;
+}
+#draw_slider_holder .tool_close{
+    background-position: right center;
+    height: 45px;
+    right:0;
+    position: absolute;
+    text-align: justify;
+    width: 52px;
+}
+#draw_slider_holder .image4 {
+    height: 29px;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    width: 29px;
+}
+#draw_slider_holder .image5 {
+    height: 29px;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    width: 29px;
+}
+.tool_save{
+    position: absolute;
+    right: 44px;
+    width: 51px;
+    height: 45px;
+}
+.tool_right{
+    position: absolute;
+    right: 85px;
+    top: 8px;
+    width: 48px;
+}
+.tool_right .extra_info{
+    display:none;
+}
+.tool_right .privacy_setting_mini a.privacy_setting_active:hover {
+
+}
+#draw_slider_holder .tool_close:hover{
+    background: #007BBF;
+    cursor: pointer;
+}
+#draw_slider_holder .tool:hover{
+    background: #007BBF;
+    cursor: pointer;
+}
+#canvas{
+    border: 1px solid #ccc;
+}
+#canvasDraw
+{
+
+}
+#draw_slider_holder .text1{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    top: 10px;
+    left: 25px;
+}
+#draw_slider_holder .text2{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    top: 10px;
+    left: 25px;
+}
+#draw_slider_holder .text3{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    top: 10px;
+    left: 25px;
+}
+#draw_slider_holder .image1{
+    height: 29px;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    width: 29px;
+}
+#draw_slider_holder .image2{
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    width: 29px;
+    height: 29px;
+}
+#draw_slider_holder .image3{
+    height: 29px;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    width: 29px;
+}
+#draw_slider_holder .image6{
+    height: 29px;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    width: 29px;
+}
+#draw_slider_holder .line{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 115px;
+    height: 45px;
+}
+#draw_slider_holder .sel{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    width: 115px;
+    height: 30px;
+}
+#draw_slider_holder .sel select{
+    display: inline-block;
+    color: #FFFFFF;
+    width: 85px;
+    height: 30px;
+    font-size: 18px;
+    border:0;
+    outline: none;
+}
+#draw_slider_holder label.cus_sel{
+    position: relative;
+    display: inline-block;
+}
+#draw_slider_holder .cus_sel:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #33a2ed;
+    background: #33a2ed;
+}
+.holder_content_description_item {
+    padding-left: 14px;
+    padding-top: 53px;
+    width: 100%;
+}
+.holder_content_description{
+    position:absolute;
+    background:#FFF;
+    z-index:2001;
+}
+
+.privacy_drawing_setting{
+    width:90%;
+}
+.privacy_drawing_setting .table_right{
+    float:right;
+}
+.privacy_drawing_setting .table_left{
+    float:left;
+}
+.holder_content_description_item .edit_menu_container,
+.holder_content_description_item #title
+{
+    width:100%;
+}
+.holder_content_description_item #title {
+    width:93%;
+}
+.holder_content_description_item #description:focus{
+    border:0;
+}
+#submit_drawing_loading,#submit_drawing_message{
+    display:none;
+}
+#submit_drawing_message.success{
+    color:green;
+}
+#submit_drawing_message{
+    color:red;
+}
